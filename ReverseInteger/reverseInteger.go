@@ -1,7 +1,6 @@
-package main
+package ReverseInteger
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -29,13 +28,4 @@ func reverse(x int) int {
 	}
 
 	return answer
-}
-
-func main() {
-	x := 123
-	fmt.Printf("%d -> %d\n", x, reverse(x))
-	x = -123
-	fmt.Printf("%d -> %d\n", x, reverse(x))
-	x = 1534236469
-	fmt.Printf("%d -> %d\n", x, reverse(x))
 }

@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package LinkedListCycle
 
 /**
  * Definition for singly-linked list.
@@ -24,11 +22,4 @@ func hasCycle(head *ListNode) bool {
 		a, b = b, b.Next.Next
 	}
 	return a == b
-}
-
-func main() {
-	head1 := ListNode{Val: 3, Next: &ListNode{Val: 2, Next: &ListNode{Val: 0, Next: &ListNode{Val: -4}}}}
-	head2 := ListNode{Val: 1, Next: &ListNode{Val: 1, Next: &ListNode{Val: 2}}}
-	fmt.Println(hasCycle(&head1))
-	fmt.Println(hasCycle(&head2))
 }

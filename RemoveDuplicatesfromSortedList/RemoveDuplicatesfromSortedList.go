@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package RemoveDuplicatesfromSortedList
 
 type ListNode struct {
 	Val  int
@@ -21,10 +19,4 @@ func deleteDuplicates(head *ListNode) *ListNode {
 		head = head.Next
 	}
 	return ans
-}
-
-func main() {
-	head := ListNode{Val: 1, Next: &ListNode{Val: 1, Next: &ListNode{Val: 2}}}
-	ans := deleteDuplicates(&head)
-	fmt.Println(ans)
 }

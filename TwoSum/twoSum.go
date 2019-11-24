@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package TwoSum
 
 func twoSum(nums []int, target int) []int {
 	index := make(map[int]int, len(nums))
@@ -11,10 +9,4 @@ func twoSum(nums []int, target int) []int {
 		index[b] = i
 	}
 	return nil
-}
-
-func main() {
-	nums := []int{3, 2, 4}
-	target := 6
-	fmt.Printf("answer: %v", twoSum(nums, target))
 }

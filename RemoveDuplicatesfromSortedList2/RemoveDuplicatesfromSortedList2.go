@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package RemoveDuplicatesfromSortedList2
 
 /**
  * Definition for singly-linked list.
@@ -27,13 +25,4 @@ func deleteDuplicates(head *ListNode) *ListNode {
 	}
 	head.Next = deleteDuplicates(head.Next)
 	return head
-}
-
-func main() {
-	head1 := ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 3, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: &ListNode{Val: 4, Next: &ListNode{Val: 5}}}}}}}
-	head2 := ListNode{Val: 1, Next: &ListNode{Val: 1, Next: &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 3}}}}}
-	head3 := ListNode{Val: 0, Next: &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 2, Next: &ListNode{Val: 3}}}}}
-	fmt.Println(deleteDuplicates(&head1))
-	fmt.Println(deleteDuplicates(&head2))
-	fmt.Println(deleteDuplicates(&head3))
 }
