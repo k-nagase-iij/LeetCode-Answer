@@ -1,0 +1,4 @@
+image: gitpod/workspace-full
+
+checkoutLocation: "go/src/github.com/k-ngs/LeetCode-Answer"
+workspaceLocation: "go/src/github.com/k-ngs/LeetCode-Answer"
