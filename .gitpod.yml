@@ -2,3 +2,6 @@ image: gitpod/workspace-full
 
 checkoutLocation: "go/src/github.com/k-ngs/LeetCode-Answer"
 workspaceLocation: "go/src/github.com/k-ngs/LeetCode-Answer"
+vscode:
+  extensions:
+    - gruntfuggly.todo-tree@0.0.177:GCyi2twUFe/rN35G99jXYQ==
