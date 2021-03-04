@@ -10,6 +10,7 @@ func TestIsPalindrome(t *testing.T) {
 	}{
 		{"121", 121, true},
 		{"1", 1, true},
+		{"12", 12, false},
 		{"123", 123, false},
 		{"-12345", -12345, false},
 		{"-11", -11, false},
